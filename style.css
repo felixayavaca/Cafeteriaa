@@ -30,6 +30,10 @@ h2{font-size:2.4rem;color:var(--green);margin-bottom:24px}
 .prod h3{font-size:1.4rem}
 .prod p{font-size:.95rem;margin:4px 0 8px}
 .prod strong{color:var(--green)}
+.invitacion-productos{display:flex;align-items:center;justify-content:center;gap:36px;margin:64px auto 0;padding:28px 32px;max-width:900px;text-align:center;background:var(--paper);border-bottom:4px solid var(--gold);border-radius:18px}
+.invitacion-productos img{display:block;width:min(38%,240px);height:auto}
+.invitacion-productos h2{margin-bottom:12px}
+.invitacion-productos p{max-width:52ch;margin:0 auto 20px}
 .contacto{text-align:center;background:var(--green);color:#fff;border-radius:24px;padding:60px 5vw}
 .contacto h2{color:#fff}
 .contacto p{margin:6px 0}
@@ -39,4 +43,4 @@ h2{font-size:2.4rem;color:var(--green);margin-bottom:24px}
 .agradecimiento h2{margin-bottom:12px}
 .agradecimiento p{max-width:48ch;margin:auto;font-size:1.05rem}
 footer{text-align:center;padding:18px;font-size:.9rem;background:var(--ink);color:#cbbfb6}
-@media(max-width:760px){.inicio,.dos{grid-template-columns:1fr}main{padding:56px 5vw}.agradecimiento{flex-direction:column;gap:16px}.agradecimiento img{width:min(70%,240px)}}
+@media(max-width:760px){.inicio,.dos{grid-template-columns:1fr}main{padding:56px 5vw}.agradecimiento,.invitacion-productos{flex-direction:column;gap:16px}.agradecimiento img{width:min(70%,240px)}.invitacion-productos img{width:min(70%,240px)}}
