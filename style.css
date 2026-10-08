@@ -34,5 +34,9 @@ h2{font-size:2.4rem;color:var(--green);margin-bottom:24px}
 .contacto h2{color:#fff}
 .contacto p{margin:6px 0}
 .contacto a{color:var(--gold)}
+.agradecimiento{display:flex;align-items:center;justify-content:center;gap:36px;margin:48px auto 0;max-width:800px;text-align:center}
+.agradecimiento img{display:block;width:min(42%,240px);height:auto}
+.agradecimiento h2{margin-bottom:12px}
+.agradecimiento p{max-width:48ch;margin:auto;font-size:1.05rem}
 footer{text-align:center;padding:18px;font-size:.9rem;background:var(--ink);color:#cbbfb6}
-@media(max-width:760px){.inicio,.dos{grid-template-columns:1fr}main{padding:56px 5vw}}
+@media(max-width:760px){.inicio,.dos{grid-template-columns:1fr}main{padding:56px 5vw}.agradecimiento{flex-direction:column;gap:16px}.agradecimiento img{width:min(70%,240px)}}
