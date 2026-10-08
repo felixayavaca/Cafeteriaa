@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column; margin: 0; background-color: #f3f5ed; font-family: 'DM Sans', sans-serif;">
+
   <header>
     <a class="logo" href="index.html">Café Tomebamba</a>
     <nav>
@@ -18,27 +19,39 @@
     </nav>
   </header>
 
-  <main>
-    <div class="inicio">
-      <div class="hero-texto">
-        <span class="subtitulo-etiqueta">Café de especialidad & tostado artesanal</span>
-        <h1>El ritmo de la sierra en cada taza.</h1>
-        <p>Granos de altura cosechados por productores locales, tueste fresco de la semana y panadería horneada cada mañana. Ven por un buen café y quédate sin prisa.</p>
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box;">
+    <div class="inicio" style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 3.5rem; width: 100%;">
+      
+      <div>
+        <span style="display: block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d49524; margin-bottom: 0.75rem;">
+          Café de especialidad & tostado artesanal
+        </span>
+        <h1 style="font-family: 'DM Serif Display', serif; color: #143225; font-size: 3.2rem; line-height: 1.1; margin-bottom: 1.25rem;">
+          El ritmo de la sierra en cada taza.
+        </h1>
+        <p style="font-size: 1.1rem; color: #4b534e; margin-bottom: 2rem; line-height: 1.6;">
+          Granos de altura cosechados por productores locales, tueste fresco de la semana y panadería horneada cada mañana. Ven por un buen café y quédate sin prisa.
+        </p>
         
-        <div class="acciones">
-          <a class="btn" href="productos.html">Explorar el menú</a>
-          <a class="btn-secundario" href="contactos.html">Visítanos</a>
+        <!-- Botones con el mismo tamaño, forma y altura -->
+        <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 2rem; flex-wrap: wrap;">
+          <a class="btn" href="productos.html" style="display: inline-block; background-color: #d49524; color: #fff; padding: 0.85rem 1.8rem; border-radius: 50px; font-weight: 700; text-decoration: none; border: 2px solid #d49524;">
+            Explorar el menú
+          </a>
+          <a href="contactos.html" style="display: inline-block; background-color: transparent; color: #1b4332; padding: 0.85rem 1.8rem; border-radius: 50px; font-weight: 700; text-decoration: none; border: 2px solid #1b4332;">
+            Visítanos
+          </a>
         </div>
 
-        <ul class="puntos-clave">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; color: #555d58; font-size: 0.95rem;">
           <li>☕ Métodos de extracción artesanal</li>
           <li>🥐 Horneado fresco del día</li>
           <li>🌿 Ambiente cómodo con Wi-Fi libre</li>
         </ul>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 300 300">
+      <div class="hero-art" aria-hidden="true" style="display: flex; justify-content: center;">
+        <svg viewBox="0 0 300 300" style="width: 100%; max-width: 320px; height: auto;">
           <circle cx="150" cy="150" r="140" fill="#1F4D3F"/>
           <path d="M110 70c-14 18 14 28 0 46M150 60c-14 18 14 28 0 46M190 70c-14 18 14 28 0 46" stroke="#E0A526" stroke-width="7" fill="none" stroke-linecap="round"/>
           <path d="M80 140h140v50a50 50 0 0 1-50 50h-40a50 50 0 0 1-50-50z" fill="#fff"/>
@@ -47,9 +60,13 @@
           <ellipse cx="150" cy="250" rx="95" ry="10" fill="#E0A526"/>
         </svg>
       </div>
+
     </div>
   </main>
 
-  <footer>© 2026 Café Tomebamba. Todos los derechos reservados.</footer>
+  <footer style="margin-top: auto; background-color: #2a1b14; color: #d8cec8; text-align: center; padding: 1.25rem; font-size: 0.85rem; width: 100%; box-sizing: border-box;">
+    © 2026 Café Tomebamba. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>

@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column; margin: 0; background-color: #f3f5ed; font-family: 'DM Sans', sans-serif;">
+
   <header>
     <a class="logo" href="index.html">Café Tomebamba</a>
     <nav>
@@ -18,33 +19,48 @@
     </nav>
   </header>
 
-  <main>
-    <div class="dos">
-      <div class="historia">
-        <span class="subtitulo-etiqueta">Nuestra filosofía</span>
-        <h2>Pasión por el buen café y las mañanas tranquilas.</h2>
-        <p>Café Tomebamba nació con una idea sencilla: devolverle al café el valor del tiempo bien invertido. Creemos en las charlas pausadas, en el sonido de las cafeteras trabajando y en el aroma que reconforta los días fríos.</p>
-        <p>Seleccionamos lotes exclusivos de fincas andinas de altura en el Austro ecuatoriano. Trabajamos codo a codo con familias caficultoras bajo un trato justo, cuidando minuciosamente cada perfil de tueste para resaltar notas frutales, achocolatadas y florales únicas.</p>
-        <p>Aquí no preparamos café al paso; preparamos una pausa en tu día.</p>
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; max-width: 1100px; margin: 0 auto; width: 100%; box-sizing: border-box;">
+    <div class="dos" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; width: 100%;">
+      
+      <div>
+        <span style="display: block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d49524; margin-bottom: 0.75rem;">
+          Nuestra filosofía
+        </span>
+        <h2 style="font-family: 'DM Serif Display', serif; color: #143225; font-size: 2.8rem; line-height: 1.15; margin-bottom: 1.5rem;">
+          Pasión por el buen café y las mañanas tranquilas.
+        </h2>
+        <p style="font-size: 1.05rem; line-height: 1.6; color: #3c403d; margin-bottom: 1rem;">
+          Café Tomebamba nació con una idea sencilla: devolverle al café el valor del tiempo bien invertido. Creemos en las charlas pausadas, en el sonido de las cafeteras trabajando y en el aroma que reconforta los días fríos.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.6; color: #3c403d; margin-bottom: 1rem;">
+          Seleccionamos lotes exclusivos de fincas andinas de altura en el Austro ecuatoriano. Trabajamos codo a codo con familias caficultoras bajo un trato justo, cuidando minuciosamente cada perfil de tueste para resaltar notas frutales, achocolatadas y florales únicas.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.6; color: #3c403d;">
+          Aquí no preparamos café al paso; preparamos una pausa en tu día.
+        </p>
       </div>
 
-      <ul class="datos">
-        <li>
-          <b>100% Arábica de Altura</b>
-          <span>Granos cultivados sobre los 1.700 m s. n. m. de variedades nobles con notas balanceadas.</span>
+      <ul class="datos" style="list-style: none; padding-left: 2rem; border-left: 3px solid #d49524; margin: 0; display: flex; flex-direction: column; gap: 2rem;">
+        <li style="display: flex; flex-direction: column;">
+          <b style="font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: #143225; margin-bottom: 0.3rem;">100% Arábica de Altura</b>
+          <span style="font-size: 0.95rem; color: #4b534e; line-height: 1.5;">Granos cultivados sobre los 1.700 m s. n. m. de variedades nobles con notas balanceadas.</span>
         </li>
-        <li>
-          <b>Micro-lotes & Tueste Semanal</b>
-          <span>Tostamos en pequeños baches para garantizar máxima frescura y aroma en cada extracción.</span>
+        <li style="display: flex; flex-direction: column;">
+          <b style="font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: #143225; margin-bottom: 0.3rem;">Micro-lotes & Tueste Semanal</b>
+          <span style="font-size: 0.95rem; color: #4b534e; line-height: 1.5;">Tostamos en pequeños baches para garantizar máxima frescura y aroma en cada extracción.</span>
         </li>
-        <li>
-          <b>Horno Propio y Artesanal</b>
-          <span>Pasteles, galletas y panes horneados cada madrugada con ingredientes reales y sin aditivos.</span>
+        <li style="display: flex; flex-direction: column;">
+          <b style="font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: #143225; margin-bottom: 0.3rem;">Horno Propio y Artesanal</b>
+          <span style="font-size: 0.95rem; color: #4b534e; line-height: 1.5;">Pasteles, galletas y panes horneados cada madrugada con ingredientes reales y sin aditivos.</span>
         </li>
       </ul>
+
     </div>
   </main>
 
-  <footer>© 2026 Café Tomebamba. Todos los derechos reservados.</footer>
+  <footer style="margin-top: auto; background-color: #2a1b14; color: #d8cec8; text-align: center; padding: 1.25rem; font-size: 0.85rem; width: 100%; box-sizing: border-box;">
+    © 2026 Café Tomebamba. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
